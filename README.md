@@ -5,6 +5,6 @@ If in doubt, impress us!
 ## Instructions
 Please either fork or clone this repo, and either provide us a link to your repo, or raise a PR (which will not be merged and will be declined automatically, but will be used to assess your code).
 As detailed on the brief, all new code should be in Kotlin. If you can use any of the new Kotlin features, do!
-All required features should be implemented - which means it both compiles and is to specification.
+All required features should be implemented - which means it both compiles and is to specification.Please add unit tests to your project.
 
 
