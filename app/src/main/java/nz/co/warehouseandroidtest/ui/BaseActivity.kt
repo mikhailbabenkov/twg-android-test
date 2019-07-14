@@ -9,7 +9,6 @@ import javax.inject.Inject
 
 @SuppressLint("Registered")
 open class BaseActivity : AppCompatActivity() {
-
     @Inject
     lateinit var viewModelFactory: ViewModelProvider.Factory
 

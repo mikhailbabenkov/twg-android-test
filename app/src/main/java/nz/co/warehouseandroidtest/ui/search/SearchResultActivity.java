@@ -9,25 +9,16 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 import android.view.View;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import nz.co.warehouseandroidtest.domain.utils.Constants;
 import nz.co.warehouseandroidtest.ui.adapters.EndlessRecyclerOnScrollListener;
 import nz.co.warehouseandroidtest.R;
 import nz.co.warehouseandroidtest.ui.adapters.SearchResultAdapter;
-import nz.co.warehouseandroidtest.domain.utils.PreferenceUtil;
-import nz.co.warehouseandroidtest.WarehouseTestApp;
 import nz.co.warehouseandroidtest.data.ProductWithoutPrice;
-import nz.co.warehouseandroidtest.data.SearchResult;
-import nz.co.warehouseandroidtest.data.SearchResultItem;
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
 
 public class SearchResultActivity extends AppCompatActivity {
 
@@ -107,36 +98,36 @@ public class SearchResultActivity extends AppCompatActivity {
     private void loadData(int startIndex, int itemsPerPage) {
         Map paramsMap = new HashMap<String, String>();
         paramsMap.put("Search", mKeyWord);
-        paramsMap.put("MachineID", Constants.MACHINE_ID);
-        paramsMap.put("UserID", PreferenceUtil.getUserId(this));
-        paramsMap.put("Branch", Constants.BRANCH_ID);
+//        paramsMap.put("MachineID", Constants.MACHINE_ID);
+//        paramsMap.put("UserID", PreferenceUtil.getUserId(this));
+//        paramsMap.put("Branch", Constants.BRANCH_ID);
         paramsMap.put("Start", String.valueOf(startIndex));
         paramsMap.put("Limit", String.valueOf(itemsPerPage));
-        ((WarehouseTestApp)getApplicationContext()).getWarehouseService().getSearchResult(paramsMap).enqueue(new Callback() {
-            @Override
-            public void onResponse(Call call, Response response) {
-                if (response.isSuccessful()) {
-                    SearchResult searchResult = (SearchResult) response.body();
-                    String ifFound = searchResult.Found;
-                    if (ifFound.equals("Y")) {
-                        totalItemNum = searchResult.HitCount;
-                        SearchResultActivity.this.startIndex += 20;
-                        for (int i = 0; i < searchResult.Results.size(); i++) {
-                            SearchResultItem item = searchResult.Results.get(i);
-                            data.add(item.Products.get(0));
-                        }
-                        searchResultAdapter.setData(data);
-                        searchResultAdapter.setLoadState(searchResultAdapter.LOADING_COMPLETE);
-                    }
-                } else {
-                    Toast.makeText(SearchResultActivity.this, "Search failed!", Toast.LENGTH_LONG).show();
-                }
-            }
-
-            @Override
-            public void onFailure(Call call, Throwable t) {
-                Toast.makeText(SearchResultActivity.this, "Search failed!", Toast.LENGTH_LONG).show();
-            }
-        });
+//        ((WarehouseTestApp)getApplicationContext()).getWarehouseService().getSearchResult(paramsMap).enqueue(new Callback() {
+//            @Override
+//            public void onResponse(Call call, Response response) {
+//                if (response.isSuccessful()) {
+//                    SearchResult searchResult = (SearchResult) response.body();
+//                    String ifFound = searchResult.Found;
+//                    if (ifFound.equals("Y")) {
+//                        totalItemNum = searchResult.HitCount;
+//                        SearchResultActivity.this.startIndex += 20;
+//                        for (int i = 0; i < searchResult.Results.size(); i++) {
+//                            SearchResultItem item = searchResult.Results.get(i);
+//                            data.add(item.Products.get(0));
+//                        }
+//                        searchResultAdapter.setData(data);
+//                        searchResultAdapter.setLoadState(searchResultAdapter.LOADING_COMPLETE);
+//                    }
+//                } else {
+//                    Toast.makeText(SearchResultActivity.this, "Search failed!", Toast.LENGTH_LONG).show();
+//                }
+//            }
+//
+//            @Override
+//            public void onFailure(Call call, Throwable t) {
+//                Toast.makeText(SearchResultActivity.this, "Search failed!", Toast.LENGTH_LONG).show();
+//            }
+//        });
     }
 }
