@@ -1,13 +1,13 @@
-package nz.co.warehouseandroidtest;
+package nz.co.warehouseandroidtest.ui.search;
 
 import android.graphics.Rect;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.widget.SwipeRefreshLayout;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.DividerItemDecoration;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.DividerItemDecoration;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 import android.view.View;
 import android.widget.Toast;
 
@@ -16,7 +16,12 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import nz.co.warehouseandroidtest.Utils.PreferenceUtil;
+import nz.co.warehouseandroidtest.domain.utils.Constants;
+import nz.co.warehouseandroidtest.ui.adapters.EndlessRecyclerOnScrollListener;
+import nz.co.warehouseandroidtest.R;
+import nz.co.warehouseandroidtest.ui.adapters.SearchResultAdapter;
+import nz.co.warehouseandroidtest.domain.utils.PreferenceUtil;
+import nz.co.warehouseandroidtest.WarehouseTestApp;
 import nz.co.warehouseandroidtest.data.ProductWithoutPrice;
 import nz.co.warehouseandroidtest.data.SearchResult;
 import nz.co.warehouseandroidtest.data.SearchResultItem;

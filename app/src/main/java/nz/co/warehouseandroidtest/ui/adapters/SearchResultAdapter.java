@@ -1,7 +1,8 @@
-package nz.co.warehouseandroidtest;
+package nz.co.warehouseandroidtest.ui.adapters;
 
-import android.support.annotation.NonNull;
-import android.support.v7.widget.RecyclerView;
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,6 +10,7 @@ import android.view.ViewGroup;
 import java.util.ArrayList;
 import java.util.List;
 
+import nz.co.warehouseandroidtest.R;
 import nz.co.warehouseandroidtest.data.ProductWithoutPrice;
 
 public class SearchResultAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {

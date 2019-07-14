@@ -1,8 +1,9 @@
-package nz.co.warehouseandroidtest;
+package nz.co.warehouseandroidtest.ui.product;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -12,7 +13,10 @@ import com.bumptech.glide.Glide;
 
 import java.util.HashMap;
 
-import nz.co.warehouseandroidtest.Utils.PreferenceUtil;
+import nz.co.warehouseandroidtest.domain.utils.Constants;
+import nz.co.warehouseandroidtest.R;
+import nz.co.warehouseandroidtest.domain.utils.PreferenceUtil;
+import nz.co.warehouseandroidtest.WarehouseTestApp;
 import nz.co.warehouseandroidtest.data.ProductDetail;
 import retrofit2.Call;
 import retrofit2.Callback;

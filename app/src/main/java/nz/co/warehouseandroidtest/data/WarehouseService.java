@@ -1,4 +1,4 @@
-package nz.co.warehouseandroidtest;
+package nz.co.warehouseandroidtest.data;
 
 import java.util.Map;
 

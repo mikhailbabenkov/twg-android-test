@@ -1,9 +1,9 @@
-package nz.co.warehouseandroidtest.Utils;
+package nz.co.warehouseandroidtest.domain.utils;
 
 import android.content.Context;
 import android.content.SharedPreferences;
 
-import nz.co.warehouseandroidtest.Constants;
+import nz.co.warehouseandroidtest.domain.utils.Constants;
 
 public class PreferenceUtil {
 

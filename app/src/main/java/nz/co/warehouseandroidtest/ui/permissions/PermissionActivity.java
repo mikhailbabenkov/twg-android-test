@@ -1,4 +1,4 @@
-package nz.co.warehouseandroidtest;
+package nz.co.warehouseandroidtest.ui.permissions;
 
 import android.app.Activity;
 import android.content.DialogInterface;
@@ -7,9 +7,13 @@ import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.Settings;
-import android.support.v4.app.ActivityCompat;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
+
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+
+import nz.co.warehouseandroidtest.domain.utils.PermissionChecker;
+import nz.co.warehouseandroidtest.R;
 
 public class PermissionActivity extends AppCompatActivity {
 

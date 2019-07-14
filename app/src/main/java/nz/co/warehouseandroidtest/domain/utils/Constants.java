@@ -1,4 +1,4 @@
-package nz.co.warehouseandroidtest;
+package nz.co.warehouseandroidtest.domain.utils;
 
 public class Constants {
     public static final String HTTP_URL_ENDPOINT = "https://twg.azure-api.net/";

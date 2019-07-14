@@ -1,15 +1,23 @@
-package nz.co.warehouseandroidtest;
+package nz.co.warehouseandroidtest.ui;
 
 import android.Manifest;
 import android.app.Activity;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
-import nz.co.warehouseandroidtest.Utils.PreferenceUtil;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import nz.co.warehouseandroidtest.domain.utils.PermissionChecker;
+import nz.co.warehouseandroidtest.R;
+import nz.co.warehouseandroidtest.domain.utils.PreferenceUtil;
+import nz.co.warehouseandroidtest.WarehouseTestApp;
 import nz.co.warehouseandroidtest.data.User;
+import nz.co.warehouseandroidtest.ui.barscan.BarScanActivity;
+import nz.co.warehouseandroidtest.ui.permissions.PermissionActivity;
+import nz.co.warehouseandroidtest.ui.search.SearchActivity;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
