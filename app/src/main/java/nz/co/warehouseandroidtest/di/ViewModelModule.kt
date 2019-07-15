@@ -7,6 +7,7 @@ import dagger.Module
 import dagger.multibindings.IntoMap
 import nz.co.warehouseandroidtest.domain.utils.TwgViewModelFactory
 import nz.co.warehouseandroidtest.ui.MainViewModel
+import nz.co.warehouseandroidtest.ui.permissions.PermissionViewModel
 import javax.inject.Singleton
 
 @Suppress("unused")
@@ -16,6 +17,11 @@ abstract class ViewModelModule {
     @IntoMap
     @ViewModelKey(MainViewModel::class)
     abstract fun bindMainViewModel(viewModel: MainViewModel): ViewModel
+
+    @Binds
+    @IntoMap
+    @ViewModelKey(PermissionViewModel::class)
+    abstract fun bindPermissionViewModel(viewModel: PermissionViewModel): ViewModel
 
     @Binds
     @Singleton

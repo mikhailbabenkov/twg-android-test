@@ -5,6 +5,16 @@ import android.content.pm.PackageManager
 import androidx.core.content.ContextCompat
 
 class PermissionHelperImpl(private val context: Context) : PermissionHelper {
+
+    override fun hasAllPermissionsGranted(results: IntArray): Boolean {
+        for (i in results.indices) {
+            if (results[i] == PackageManager.PERMISSION_DENIED) {
+                return false
+            }
+        }
+        return true
+    }
+
     override fun isLackOfPermissions(vararg permissions: String): Boolean {
         var i = 0
         while (i < permissions.size) {
