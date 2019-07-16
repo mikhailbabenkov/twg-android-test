@@ -1,10 +1,24 @@
 # TWG Android Test
-This Repo is the starting point for a test application. You are required to refactor it as specified in the brief obtained as part of the interview process.
-This isn't just about the functionality. We want to see what control you have over your code and how you represent your system and logic, and how elegantly it is done. We want to see your thought process - which means - NO GIANT INITIAL COMMIT. No one writes perfect code that adds the complete behavior for a new feature on the first time.
-If in doubt, impress us!
-## Instructions
-Please either fork or clone this repo, and either provide us a link to your repo, or raise a PR (which will not be merged and will be declined automatically, but will be used to assess your code).
-As detailed on the brief, all new code should be in Kotlin. If you can use any of the new Kotlin features, do!
-All required features should be implemented - which means it both compiles and is to specification.Please add unit tests to your project.
+Changes:
 
+1. Introduce AndroidX
+2. Convert classes to Kotlin
+3. Extract layers (services, datasources, repo, usecases, viewmodels)
+4. Refactor adapter, some activities, viewholders.
+5. Introduce DI
+6. Introduce Unit testing with JUnit5 (as proof of concept)
+7. Coroutines
+8. MVVM
+9. Livedata
+
+Out of scope:
+
+1. Didnt touch POJOs and didnt extract proper models for each layer
+3. Didnt touch UI/UX
+4. The app is not handling all edge cases (like proper error handling , havent checked Barcode activity assuming it s working)
+5. Didnt refactor SearchActivity , BarCodeActivity
+6. No local storage apart from storing userId
+7. Comments in the code
+
+Further refactoring can be performed as there is no 100% perfect code . The scope is big and i was trying to cover a lot of things . If you have any questions Or if you want me to add smth or explain smth Please dont hesitate.
 
