@@ -50,7 +50,7 @@ class PermissionActivity : BaseActivity() {
         }
     }
 
-    fun requestPermissions(permissions: Array<String>) {
+    private fun requestPermissions(permissions: Array<String>) {
         ActivityCompat.requestPermissions(this, permissions, PERMISSION_REQUEST_CODE)
     }
 
@@ -74,7 +74,7 @@ class PermissionActivity : BaseActivity() {
         builder.show()
     }
 
-    fun startAppSettings() {
+    private fun startAppSettings() {
         val intent = Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS)
         intent.data = Uri.parse(PACKAGE_URL_SCHEME + packageName)
         startActivity(intent)
