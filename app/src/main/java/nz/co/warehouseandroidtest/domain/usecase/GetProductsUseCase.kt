@@ -12,8 +12,8 @@ class GetProductsUseCase(private val repository: WarehouseRepository) {
     ): Result<List<ProductWithoutPrice>> {
         return when (val result = repository.search(query, pagination)) {
             is Result.Success -> {
-                if (result.data.isEmpty()) pagination.hasMore = false
                 pagination.start += result.data.size
+                if (result.data.isEmpty() && pagination.start != 0) pagination.hasMore = false
                 Result.Success(result.data)
             }
             is Result.Error -> result
