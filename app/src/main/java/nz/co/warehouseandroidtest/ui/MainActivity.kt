@@ -4,10 +4,9 @@ import android.Manifest
 import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
-import android.view.View
-import android.widget.TextView
 import android.widget.Toast
 import androidx.lifecycle.Observer
+import kotlinx.android.synthetic.main.activity_main.*
 import nz.co.warehouseandroidtest.R
 import nz.co.warehouseandroidtest.domain.utils.viewModelProvider
 import nz.co.warehouseandroidtest.ui.barscan.BarScanActivity
@@ -16,12 +15,7 @@ import nz.co.warehouseandroidtest.ui.search.SearchActivity
 
 class MainActivity : BaseActivity() {
 
-    val REQUEST_PERMISSION_CODE = 0
-
-    private var tvScan: TextView? = null
-    private var tvSearch: TextView? = null
-
-    lateinit var viewModel: MainViewModel
+    private lateinit var viewModel: MainViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -45,22 +39,18 @@ class MainActivity : BaseActivity() {
     }
 
     private fun bindUi() {
-        tvScan = findViewById<TextView>(R.id.tv_scan_barcode) as TextView
-        tvSearch = findViewById<View>(R.id.tv_search) as TextView
-
-        tvScan!!.setOnClickListener {
+        tv_scan_barcode.setOnClickListener {
             val intent = Intent()
             intent.setClass(this@MainActivity, BarScanActivity::class.java)
             startActivity(intent)
         }
 
-        tvSearch!!.setOnClickListener {
+        tv_search.setOnClickListener {
             val intent = Intent()
             intent.setClass(this@MainActivity, SearchActivity::class.java)
             startActivity(intent)
         }
     }
-
 
     public override fun onResume() {
         super.onResume()
@@ -79,5 +69,6 @@ class MainActivity : BaseActivity() {
 
     companion object{
         private val PERMISSIONS = arrayOf(Manifest.permission.CAMERA)
+        private const val REQUEST_PERMISSION_CODE = 0
     }
 }

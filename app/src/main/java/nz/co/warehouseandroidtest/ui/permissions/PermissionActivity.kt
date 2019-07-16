@@ -18,11 +18,7 @@ import nz.co.warehouseandroidtest.ui.BaseActivity
 
 class PermissionActivity : BaseActivity() {
 
-    val PACKAGE_URL_SCHEME = "package:"
-
-    val PERMISSION_REQUEST_CODE = 0
-
-    lateinit var viewModel: PermissionViewModel
+    private lateinit var viewModel: PermissionViewModel
 
     public override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -80,7 +76,6 @@ class PermissionActivity : BaseActivity() {
         builder.show()
     }
 
-
     fun startAppSettings() {
         val intent = Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS)
         intent.data = Uri.parse(PACKAGE_URL_SCHEME + packageName)
@@ -88,11 +83,11 @@ class PermissionActivity : BaseActivity() {
     }
 
     companion object {
-
-        var PERMISSION_GRANTED = 0
-        var PERMISSION_DENIED = 1
-
-        val PERMISSION_EXTRA_FLAG = "nz.co.warehouseandroidtest.permission.extra_permission"
+        private const val PERMISSION_REQUEST_CODE = 0
+        private const val PACKAGE_URL_SCHEME = "package:"
+        const val PERMISSION_GRANTED = 0
+        const val PERMISSION_DENIED = 1
+        private const val PERMISSION_EXTRA_FLAG = "nz.co.warehouseandroidtest.permission.extra_permission"
 
         fun startActivityForResult(activity: Activity, requestCode: Int, permissions: Array<String>) {
             val intent = Intent()

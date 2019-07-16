@@ -8,6 +8,8 @@ import nz.co.warehouseandroidtest.data.datasource.WarehouseRemoteDataSource
 import nz.co.warehouseandroidtest.data.repo.WarehouseRepository
 import nz.co.warehouseandroidtest.data.service.WarehousePrefService
 import nz.co.warehouseandroidtest.data.service.WarehouseService
+import nz.co.warehouseandroidtest.domain.usecase.GetProductDetailsUseCase
+import nz.co.warehouseandroidtest.domain.usecase.GetProductsUseCase
 import nz.co.warehouseandroidtest.domain.usecase.UpdateUserUseCase
 import nz.co.warehouseandroidtest.domain.utils.ApiConfig
 import okhttp3.Interceptor
@@ -76,10 +78,23 @@ class AppModule {
     }
 
     @Provides
-    @Singleton
     fun provideUpdateUserUseCase(
             repo: WarehouseRepository
     ): UpdateUserUseCase {
         return UpdateUserUseCase(repo)
+    }
+
+    @Provides
+    fun provideGetProductsUseCase(
+            repo: WarehouseRepository
+    ): GetProductsUseCase {
+        return GetProductsUseCase(repo)
+    }
+
+    @Provides
+    fun provideGetProductDetailsUseCase(
+            repo: WarehouseRepository
+    ): GetProductDetailsUseCase {
+        return GetProductDetailsUseCase(repo)
     }
 }
