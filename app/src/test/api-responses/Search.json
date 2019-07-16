@@ -1,0 +1,445 @@
+{
+  "HitCount": "251",
+  "Results": [
+    {
+      "Description": "Samsung AV Marketing/Rebates",
+      "Products": [
+        {
+          "Class0": "AV & Gaming",
+          "Barcode": "9400048209242",
+          "ItemDescription": "",
+          "DeptID": "06040",
+          "SubClass": "TV's 40\" to 49\"",
+          "Class0ID": "09936",
+          "SubDeptID": "6285",
+          "Description": "Samsung AV Marketing/Rebates",
+          "ItemCode": "",
+          "SubDept": "Visual",
+          "ClassID": "6302",
+          "ImageURL": "https://twg.azure-api.net/twlProductImage/productImage/9400048209242/format/png/size/small",
+          "Dept": "Audio Visual",
+          "SubClassID": "1305",
+          "Class": "Televisions",
+          "ProductKey": "1794286"
+        }
+      ]
+    },
+    {
+      "Description": "Samsung Communications Marketing Activity",
+      "Products": [
+        {
+          "Class0": "Communications",
+          "Barcode": "9400988273815",
+          "ItemDescription": "",
+          "DeptID": "06044",
+          "SubClass": "SP Handsets",
+          "Class0ID": "09450",
+          "SubDeptID": "5322",
+          "Description": "Samsung Communications Marketing Activity",
+          "ItemCode": "",
+          "SubDept": "Spark",
+          "ClassID": "5565",
+          "ImageURL": "https://twg.azure-api.net/twlProductImage/productImage/9400988273815/format/png/size/small",
+          "Dept": "Communications",
+          "SubClassID": "1609",
+          "Class": "Spark",
+          "ProductKey": "2145821"
+        }
+      ]
+    },
+    {
+      "Description": "Samsung Gear Vr",
+      "Products": [
+        {
+          "Class0": "Computing & Tech Accessories",
+          "Barcode": "8806088138640",
+          "ItemDescription": "",
+          "DeptID": "06043",
+          "SubClass": "Tech Gadgets Other",
+          "Class0ID": "09912",
+          "SubDeptID": "5396",
+          "Description": "Samsung Gear Vr",
+          "ItemCode": "",
+          "SubDept": "Tech Gadgets",
+          "ClassID": "5807",
+          "ImageURL": "https://twg.azure-api.net/twlProductImage/productImage/8806088138640/format/png/size/small",
+          "Dept": "Technology Accessories",
+          "SubClassID": "2391",
+          "Class": "Tech Gadgets",
+          "ProductKey": "2270063"
+        }
+      ]
+    },
+    {
+      "Description": "2degrees Samsung A10 Black",
+      "Products": [
+        {
+          "Class0": "Communications",
+          "Barcode": "9400022090897",
+          "ItemDescription": "",
+          "DeptID": "06044",
+          "SubClass": "2D Handsets",
+          "Class0ID": "09450",
+          "SubDeptID": "5321",
+          "Description": "2degrees Samsung A10 Black",
+          "ItemCode": "",
+          "SubDept": "2 Degrees",
+          "ClassID": "6690",
+          "ImageURL": "https://twg.azure-api.net/twlProductImage/productImage/9400022090897/format/png/size/small",
+          "Dept": "Communications",
+          "SubClassID": "1362",
+          "Class": "2Degrees",
+          "ProductKey": "2572541"
+        }
+      ]
+    },
+    {
+      "Description": "Vodafone Samsung Galaxy A10 Locked Bundle Black",
+      "Products": [
+        {
+          "Class0": "Communications",
+          "Barcode": "9419640003219",
+          "ItemDescription": "",
+          "DeptID": "06044",
+          "SubClass": "Vf Handset Bundles",
+          "Class0ID": "09450",
+          "SubDeptID": "5323",
+          "Description": "Vodafone Samsung Galaxy A10 Locked Bundle Black",
+          "ItemCode": "",
+          "SubDept": "Vodafone",
+          "ClassID": "5570",
+          "ImageURL": "https://twg.azure-api.net/twlProductImage/productImage/9419640003219/format/png/size/small",
+          "Dept": "Communications",
+          "SubClassID": "1645",
+          "Class": "Vodafone",
+          "ProductKey": "2578445"
+        }
+      ]
+    },
+    {
+      "Description": "Vodafone Samsung Galaxy A10 Locked Bundle Blue",
+      "Products": [
+        {
+          "Class0": "Communications",
+          "Barcode": "9419640003226",
+          "ItemDescription": "",
+          "DeptID": "06044",
+          "SubClass": "Vf Handset Bundles",
+          "Class0ID": "09450",
+          "SubDeptID": "5323",
+          "Description": "Vodafone Samsung Galaxy A10 Locked Bundle Blue",
+          "ItemCode": "",
+          "SubDept": "Vodafone",
+          "ClassID": "5570",
+          "ImageURL": "https://twg.azure-api.net/twlProductImage/productImage/9419640003226/format/png/size/small",
+          "Dept": "Communications",
+          "SubClassID": "1645",
+          "Class": "Vodafone",
+          "ProductKey": "2578446"
+        }
+      ]
+    },
+    {
+      "Description": "Vodafone Samsung Galaxy A10 Locked Bundle Red",
+      "Products": [
+        {
+          "Class0": "Communications",
+          "Barcode": "9419640003202",
+          "ItemDescription": "",
+          "DeptID": "06044",
+          "SubClass": "Vf Handset Bundles",
+          "Class0ID": "09450",
+          "SubDeptID": "5323",
+          "Description": "Vodafone Samsung Galaxy A10 Locked Bundle Red",
+          "ItemCode": "",
+          "SubDept": "Vodafone",
+          "ClassID": "5570",
+          "ImageURL": "https://twg.azure-api.net/twlProductImage/productImage/9419640003202/format/png/size/small",
+          "Dept": "Communications",
+          "SubClassID": "1645",
+          "Class": "Vodafone",
+          "ProductKey": "2578447"
+        }
+      ]
+    },
+    {
+      "Description": "Spark Samsung Galaxy A10 Black",
+      "Products": [
+        {
+          "Class0": "Communications",
+          "Barcode": "8801643889210",
+          "ItemDescription": "",
+          "DeptID": "06044",
+          "SubClass": "SP Handsets",
+          "Class0ID": "09450",
+          "SubDeptID": "5322",
+          "Description": "Spark Samsung Galaxy A10 Black",
+          "ItemCode": "",
+          "SubDept": "Spark",
+          "ClassID": "5565",
+          "ImageURL": "https://twg.azure-api.net/twlProductImage/productImage/8801643889210/format/png/size/small",
+          "Dept": "Communications",
+          "SubClassID": "1609",
+          "Class": "Spark",
+          "ProductKey": "2581326"
+        }
+      ]
+    },
+    {
+      "Description": "Spark Samsung Galaxy A30 Black",
+      "Products": [
+        {
+          "Class0": "Communications",
+          "Barcode": "8801643889999",
+          "ItemDescription": "",
+          "DeptID": "06044",
+          "SubClass": "SP Handsets",
+          "Class0ID": "09450",
+          "SubDeptID": "5322",
+          "Description": "Spark Samsung Galaxy A30 Black",
+          "ItemCode": "",
+          "SubDept": "Spark",
+          "ClassID": "5565",
+          "ImageURL": "https://twg.azure-api.net/twlProductImage/productImage/8801643889999/format/png/size/small",
+          "Dept": "Communications",
+          "SubClassID": "1609",
+          "Class": "Spark",
+          "ProductKey": "2581328"
+        }
+      ]
+    },
+    {
+      "Description": "Vodafone Samsung Galaxy A20 Black",
+      "Products": [
+        {
+          "Class0": "Communications",
+          "Barcode": "8801643909543",
+          "ItemDescription": "",
+          "DeptID": "06044",
+          "SubClass": "Vf Handsets",
+          "Class0ID": "09450",
+          "SubDeptID": "5323",
+          "Description": "Vodafone Samsung Galaxy A20 Black",
+          "ItemCode": "",
+          "SubDept": "Vodafone",
+          "ClassID": "5570",
+          "ImageURL": "https://twg.azure-api.net/twlProductImage/productImage/8801643909543/format/png/size/small",
+          "Dept": "Communications",
+          "SubClassID": "1628",
+          "Class": "Vodafone",
+          "ProductKey": "2578448"
+        }
+      ]
+    },
+    {
+      "Description": "Spark Samsung Galaxy A30 White",
+      "Products": [
+        {
+          "Class0": "Communications",
+          "Barcode": "8801643889975",
+          "ItemDescription": "",
+          "DeptID": "06044",
+          "SubClass": "SP Handsets",
+          "Class0ID": "09450",
+          "SubDeptID": "5322",
+          "Description": "Spark Samsung Galaxy A30 White",
+          "ItemCode": "",
+          "SubDept": "Spark",
+          "ClassID": "5565",
+          "ImageURL": "https://twg.azure-api.net/twlProductImage/productImage/8801643889975/format/png/size/small",
+          "Dept": "Communications",
+          "SubClassID": "1609",
+          "Class": "Spark",
+          "ProductKey": "2581329"
+        }
+      ]
+    },
+    {
+      "Description": "Spark Samsung Galaxy A10 Blue",
+      "Products": [
+        {
+          "Class0": "Communications",
+          "Barcode": "8801643889166",
+          "ItemDescription": "",
+          "DeptID": "06044",
+          "SubClass": "SP Handsets",
+          "Class0ID": "09450",
+          "SubDeptID": "5322",
+          "Description": "Spark Samsung Galaxy A10 Blue",
+          "ItemCode": "",
+          "SubDept": "Spark",
+          "ClassID": "5565",
+          "ImageURL": "https://twg.azure-api.net/twlProductImage/productImage/8801643889166/format/png/size/small",
+          "Dept": "Communications",
+          "SubClassID": "1609",
+          "Class": "Spark",
+          "ProductKey": "2581327"
+        }
+      ]
+    },
+    {
+      "Description": "Vodafone Samsung Galaxy A20 Blue",
+      "Products": [
+        {
+          "Class0": "Communications",
+          "Barcode": "8801643909536",
+          "ItemDescription": "",
+          "DeptID": "06044",
+          "SubClass": "Vf Handsets",
+          "Class0ID": "09450",
+          "SubDeptID": "5323",
+          "Description": "Vodafone Samsung Galaxy A20 Blue",
+          "ItemCode": "",
+          "SubDept": "Vodafone",
+          "ClassID": "5570",
+          "ImageURL": "https://twg.azure-api.net/twlProductImage/productImage/8801643909536/format/png/size/small",
+          "Dept": "Communications",
+          "SubClassID": "1628",
+          "Class": "Vodafone",
+          "ProductKey": "2578449"
+        }
+      ]
+    },
+    {
+      "Description": "2degrees Samsung Galaxy A20 Black",
+      "Products": [
+        {
+          "Class0": "Communications",
+          "Barcode": "9400022090972",
+          "ItemDescription": "",
+          "DeptID": "06044",
+          "SubClass": "2D Handsets",
+          "Class0ID": "09450",
+          "SubDeptID": "5321",
+          "Description": "2degrees Samsung Galaxy A20 Black",
+          "ItemCode": "",
+          "SubDept": "2 Degrees",
+          "ClassID": "6690",
+          "ImageURL": "https://twg.azure-api.net/twlProductImage/productImage/9400022090972/format/png/size/small",
+          "Dept": "Communications",
+          "SubClassID": "1362",
+          "Class": "2Degrees",
+          "ProductKey": "2572542"
+        }
+      ]
+    },
+    {
+      "Description": "Vodafone Samsung Galaxy A20 Red",
+      "Products": [
+        {
+          "Class0": "Communications",
+          "Barcode": "8801643909420",
+          "ItemDescription": "",
+          "DeptID": "06044",
+          "SubClass": "Vf Handsets",
+          "Class0ID": "09450",
+          "SubDeptID": "5323",
+          "Description": "Vodafone Samsung Galaxy A20 Red",
+          "ItemCode": "",
+          "SubDept": "Vodafone",
+          "ClassID": "5570",
+          "ImageURL": "https://twg.azure-api.net/twlProductImage/productImage/8801643909420/format/png/size/small",
+          "Dept": "Communications",
+          "SubClassID": "1628",
+          "Class": "Vodafone",
+          "ProductKey": "2581373"
+        }
+      ]
+    },
+    {
+      "Description": "Samsung Galaxy Tab A 10.5 Wi-Fi",
+      "Products": [
+        {
+          "Class0": "Computing & Tech Accessories",
+          "Barcode": "8801643432928",
+          "ItemDescription": "",
+          "DeptID": "06060",
+          "SubClass": "Tablets - Andriod OS",
+          "Class0ID": "09912",
+          "SubDeptID": "5333",
+          "Description": "Samsung Galaxy Tab A 10.5 Wi-Fi",
+          "ItemCode": "",
+          "SubDept": "Computing Devices",
+          "ClassID": "6645",
+          "ImageURL": "https://twg.azure-api.net/twlProductImage/productImage/8801643432928/format/png/size/small",
+          "Dept": "Computing",
+          "SubClassID": "5036",
+          "Class": "Tablets",
+          "ProductKey": "2504635"
+        }
+      ]
+    },
+    {
+      "Description": "2degrees Samsung Galaxy A30 Black",
+      "Products": [
+        {
+          "Class0": "Communications",
+          "Barcode": "9400022090903",
+          "ItemDescription": "",
+          "DeptID": "06044",
+          "SubClass": "2D Handsets",
+          "Class0ID": "09450",
+          "SubDeptID": "5321",
+          "Description": "2degrees Samsung Galaxy A30 Black",
+          "ItemCode": "",
+          "SubDept": "2 Degrees",
+          "ClassID": "6690",
+          "ImageURL": "https://twg.azure-api.net/twlProductImage/productImage/9400022090903/format/png/size/small",
+          "Dept": "Communications",
+          "SubClassID": "1362",
+          "Class": "2Degrees",
+          "ProductKey": "2571133"
+        }
+      ]
+    },
+    {
+      "Description": "Samsung 24 inch S24F350F LED Monitor Black",
+      "Products": [
+        {
+          "Class0": "Computing & Tech Accessories",
+          "Barcode": "8806088201528",
+          "ItemDescription": "",
+          "DeptID": "06060",
+          "SubClass": "Monitors",
+          "Class0ID": "09912",
+          "SubDeptID": "5333",
+          "Description": "Samsung 24 inch S24F350F LED Monitor Black",
+          "ItemCode": "",
+          "SubDept": "Computing Devices",
+          "ClassID": "5594",
+          "ImageURL": "https://twg.azure-api.net/twlProductImage/productImage/8806088201528/format/png/size/small",
+          "Dept": "Computing",
+          "SubClassID": "5023",
+          "Class": "Computers",
+          "ProductKey": "2306395"
+        }
+      ]
+    },
+    {
+      "Description": "Samsung 24 inch S24E390H LED Monitor Black",
+      "Products": [
+        {
+          "Class0": "Computing & Tech Accessories",
+          "Barcode": "8806086593083",
+          "ItemDescription": "",
+          "DeptID": "06060",
+          "SubClass": "Monitors",
+          "Class0ID": "09912",
+          "SubDeptID": "5333",
+          "Description": "Samsung 24 inch S24E390H LED Monitor Black",
+          "ItemCode": "",
+          "SubDept": "Computing Devices",
+          "ClassID": "5594",
+          "ImageURL": "https://twg.azure-api.net/twlProductImage/productImage/8806086593083/format/png/size/small",
+          "Dept": "Computing",
+          "SubClassID": "5023",
+          "Class": "Computers",
+          "ProductKey": "2222442"
+        }
+      ]
+    }
+  ],
+  "SearchID": "39064",
+  "ProdQAT": "Prod",
+  "Found": "Y"
+}

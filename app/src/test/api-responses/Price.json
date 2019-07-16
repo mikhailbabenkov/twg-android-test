@@ -1,0 +1,41 @@
+{
+  "MachineID": "1234567890",
+  "Action": "S",
+  "ScanBarcode": "8801643909543",
+  "ScanID": "1395818",
+  "UserDescription": "",
+  "Product": {
+    "Class0": "Communications",
+    "Price": {
+      "Price": "349",
+      "Associations": [
+        {
+          "Description": "Buy 1 Vodafone Mobile Phone, get 1 Vodafone Triple SIM for FREE",
+          "ValidUntil": "2019-07-30T23:59:00"
+        }
+      ],
+      "Type": "REG"
+    },
+    "Barcode": "8801643909543",
+    "ItemDescription": "",
+    "DeptID": "06044",
+    "SubClass": "Vf Handsets",
+    "Class0ID": "09450",
+    "SubDeptID": "5323",
+    "Description": "Vodafone Samsung Galaxy A20 Black",
+    "BranchPrice": "349",
+    "ItemCode": "",
+    "SubDept": "Vodafone",
+    "ClassID": "5570",
+    "ImageURL": "https://twg.azure-api.net/twlProductImage/productImage/8801643909543/format/png/size/small",
+    "Dept": "Communications",
+    "SubClassID": "1628",
+    "Class": "Vodafone",
+    "ProductKey": "2578448"
+  },
+  "ProdQAT": "Prod",
+  "ScanDateTime": "2019-07-16T18:56:41",
+  "Found": "Y",
+  "UserID": "A350DC24-B5DB-410C-BA8E-37310F269C95",
+  "Branch": "208"
+}
