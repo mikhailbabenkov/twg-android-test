@@ -10,14 +10,23 @@ import java.lang.NullPointerException
 
 class WarehouseRepository(private val remoteDataSource: WarehouseRemoteDataSource,
                           private val localDataSource: WarehouseLocalDataSource) {
+
     suspend fun getUserId(tryCache: Boolean): Result<String> {
         return if(tryCache) {
             localDataSource.getUserId()?.let {
                 Result.Success(it)
-            } ?: remoteDataSource.getNewUserId()
+            } ?: getUserId()
         } else {
-            remoteDataSource.getNewUserId()
+            getUserId()
         }
+    }
+
+    private suspend fun getUserId(): Result<String> {
+        val result = remoteDataSource.getNewUserId()
+        if(result is Result.Success) {
+            localDataSource.putUserId(result.data)
+        }
+        return result
     }
 
     suspend fun search(query: String, pagination: Pagination): Result<List<ProductWithoutPrice>> {
