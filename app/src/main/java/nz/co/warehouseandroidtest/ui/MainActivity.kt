@@ -59,10 +59,10 @@ class MainActivity : BaseActivity() {
 
     public override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
-        if (Activity.RESULT_OK != resultCode) {
+        if(requestCode != REQUEST_PERMISSION_CODE) {
             return
         }
-        if (requestCode == REQUEST_PERMISSION_CODE && resultCode == PermissionActivity.PERMISSION_DENIED) {
+        if(resultCode == PermissionActivity.RESULT_PERMISSION_DENIED) {
             finish()
         }
     }

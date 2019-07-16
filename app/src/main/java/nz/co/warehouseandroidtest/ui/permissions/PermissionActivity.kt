@@ -2,7 +2,6 @@ package nz.co.warehouseandroidtest.ui.permissions
 
 import android.app.Activity
 import android.content.Intent
-import android.content.pm.PackageManager
 import android.net.Uri
 import android.os.Bundle
 import android.provider.Settings
@@ -11,7 +10,6 @@ import androidx.appcompat.app.AlertDialog
 import androidx.core.app.ActivityCompat
 import androidx.lifecycle.Observer
 
-import nz.co.warehouseandroidtest.domain.utils.PermissionChecker
 import nz.co.warehouseandroidtest.R
 import nz.co.warehouseandroidtest.domain.utils.viewModelProvider
 import nz.co.warehouseandroidtest.ui.BaseActivity
@@ -57,7 +55,7 @@ class PermissionActivity : BaseActivity() {
     }
 
     private fun allPermissionsGranted() {
-        setResult(PERMISSION_GRANTED)
+        setResult(RESULT_PERMISSION_GRANTED)
         finish()
     }
 
@@ -67,7 +65,7 @@ class PermissionActivity : BaseActivity() {
         builder.setMessage("Current app lacks necessary permissions. \n\nPlease click \"Settings\" - \"Permission\" - to grant permissions. \n\nThen click back button twice to return.")
 
         builder.setNeutralButton("Quit") { dialog, which ->
-            setResult(PERMISSION_DENIED)
+            setResult(RESULT_PERMISSION_DENIED)
             finish()
         }
 
@@ -85,8 +83,8 @@ class PermissionActivity : BaseActivity() {
     companion object {
         private const val PERMISSION_REQUEST_CODE = 0
         private const val PACKAGE_URL_SCHEME = "package:"
-        const val PERMISSION_GRANTED = 0
-        const val PERMISSION_DENIED = 1
+        const val RESULT_PERMISSION_GRANTED = 0
+        const val RESULT_PERMISSION_DENIED = 1
         private const val PERMISSION_EXTRA_FLAG = "nz.co.warehouseandroidtest.permission.extra_permission"
 
         fun startActivityForResult(activity: Activity, requestCode: Int, permissions: Array<String>) {
