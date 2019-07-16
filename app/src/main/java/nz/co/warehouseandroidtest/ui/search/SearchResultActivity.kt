@@ -8,7 +8,6 @@ import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.activity_search_result.*
-
 import nz.co.warehouseandroidtest.R
 import nz.co.warehouseandroidtest.ui.adapters.SearchResultAdapter
 import nz.co.warehouseandroidtest.domain.utils.viewModelProvider
@@ -53,13 +52,14 @@ class SearchResultActivity : BaseActivity(), SearchResultAdapter.Callback {
 
     private fun observeData() {
         viewModel.uiModel.observe(this, Observer {
-            searchResultAdapter.hasMore(it.hasMore)
+            searchResultAdapter.setLoading(it.isLoading)
             if (it.shouldRefreshAll) {
                 searchResultAdapter.clear()
                 refresh_layout.isRefreshing = false
             }
             if (it.data != null) {
                 searchResultAdapter.addData(it.data)
+                searchResultAdapter.setHasMore(it.hasMore)
             }
             if (it.error != null) {
                 Toast.makeText(this, "Search failed!", Toast.LENGTH_LONG).show()

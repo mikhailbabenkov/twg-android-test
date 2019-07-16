@@ -1,14 +1,8 @@
 package nz.co.warehouseandroidtest.ui.adapters
 
 import androidx.recyclerview.widget.RecyclerView
-
-import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
-
 import java.util.ArrayList
-
-import nz.co.warehouseandroidtest.R
 import nz.co.warehouseandroidtest.data.ProductWithoutPrice
 import nz.co.warehouseandroidtest.ui.adapters.viewholder.FooterViewHolder
 import nz.co.warehouseandroidtest.ui.adapters.viewholder.SearchResultViewHolder
@@ -46,43 +40,27 @@ class SearchResultAdapter(private val callback: Callback) : RecyclerView.Adapter
             is SearchResultViewHolder -> holder.bind(data[position])
             is FooterViewHolder -> holder.bind(loadingState)
         }
-//        if (holder is SearchResultViewHolder) {
-//            holder.bind(data[position])
-//        } else if (holder is FooterViewHolder) {
-//            when (currentLoadState) {
-//                LOADING -> {
-//                    holder.pbLoading.visibility = View.VISIBLE
-//                    holder.tvLoading.visibility = View.VISIBLE
-//                    holder.llEnd.visibility = View.GONE
-//                }
-//                LOADING_COMPLETE -> {
-//                    holder.pbLoading.visibility = View.INVISIBLE
-//                    holder.tvLoading.visibility = View.INVISIBLE
-//                    holder.llEnd.visibility = View.GONE
-//                }
-//                LOADING_END -> {
-//                    holder.pbLoading.visibility = View.GONE
-//                    holder.tvLoading.visibility = View.GONE
-//                    holder.llEnd.visibility = View.VISIBLE
-//                }
-//                else -> {
-//                }
-//            }
-//        }
     }
 
     override fun getItemCount(): Int {
         return data.size + 1
     }
 
-    fun hasMore(hasMore: Boolean?) {
-        loadingState = hasMore?.let { if (it) LOADING else LOADING_END } ?: LOADING_COMPLETE
+    fun setLoading(isLoading: Boolean) {
+        loadingState = if (isLoading) LOADING else LOADING_COMPLETE
         notifyDataSetChanged()
     }
 
     fun clear() {
         data.clear()
         notifyDataSetChanged()
+    }
+
+    fun setHasMore(hasMore: Boolean) {
+        if (!hasMore) {
+            loadingState = LOADING_END
+            notifyDataSetChanged()
+        }
     }
 
     interface Callback : SearchResultViewHolder.Callback

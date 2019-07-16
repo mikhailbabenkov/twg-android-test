@@ -45,7 +45,7 @@ class SearchResultViewModel @Inject constructor(
 
     private fun loadProducts(shouldInvalidate: Boolean) = scope.launch(dispatcherProvider.io) {
         withContext(dispatcherProvider.main) {
-            _uiModel.value = SearchResultUiModel(pagination.hasMore, shouldInvalidate)
+            _uiModel.value = SearchResultUiModel(true, pagination.hasMore, shouldInvalidate)
         }
         val result = getProducts.invoke(query, pagination)
         withContext(dispatcherProvider.main) {
@@ -61,14 +61,15 @@ class SearchResultViewModel @Inject constructor(
     private fun handleResult(result: Result<List<ProductWithoutPrice>>) {
         when(result) {
             is Result.Success-> {
-                _uiModel.value = SearchResultUiModel(pagination.hasMore, false, result.data)
+                _uiModel.value = SearchResultUiModel(false, pagination.hasMore, false, result.data)
             }
-            is Result.Error-> _uiModel.value = SearchResultUiModel(null, false,null, result.exception)
+            is Result.Error-> _uiModel.value = SearchResultUiModel(false, pagination.hasMore,false,null, result.exception)
         }
     }
 
     data class SearchResultUiModel(
-            val hasMore: Boolean? = null,
+            val isLoading: Boolean = false,
+            val hasMore: Boolean,
             val shouldRefreshAll: Boolean = false,
             val data: List<ProductWithoutPrice>? = null,
             val error: Exception? = null
