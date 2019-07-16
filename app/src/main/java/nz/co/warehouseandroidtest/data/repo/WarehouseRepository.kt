@@ -2,7 +2,6 @@ package nz.co.warehouseandroidtest.data.repo
 
 import nz.co.warehouseandroidtest.data.ProductDetail
 import nz.co.warehouseandroidtest.data.ProductWithoutPrice
-import nz.co.warehouseandroidtest.data.SearchResultItem
 import nz.co.warehouseandroidtest.data.datasource.WarehouseLocalDataSource
 import nz.co.warehouseandroidtest.data.datasource.WarehouseRemoteDataSource
 import nz.co.warehouseandroidtest.domain.data.Pagination
